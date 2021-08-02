@@ -4,9 +4,9 @@
   "description": "commands to run the application",
   "main": "index.js",
   "scripts": {
-    "start": "npm start",
+   "start": "npm start",
     "start:watch": "nodemon",
-    "build": "tsc -p ./src"
+    "build": "tsc"
   },
   "nodemonConfig": {
     "ignore": [
