@@ -4,9 +4,12 @@
   "description": "commands to run the application",
   "main": "index.js",
   "scripts": {
-   "start": "npm start",
-    "start:watch": "nodemon",
-    "build": "tsc"
+   "build-ts": "tsc",
+    "postinstall": "npm run build-ts",
+    "start": "npm run serve",
+    "serve": "node dist/app.js",
+    "watch-node": "nodemon dist/app.js",
+    "watch-ts": "tsc -w"
   },
   "nodemonConfig": {
     "ignore": [
