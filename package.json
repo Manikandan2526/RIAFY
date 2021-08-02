@@ -4,9 +4,9 @@
   "description": "commands to run the application",
   "main": "index.js",
   "scripts": {
-    "start": "node --inspect=5858 -r ts-node/register ./src/app.ts",
+    "start": "npm start",
     "start:watch": "nodemon",
-    "build": "tsc"
+    "build": "tsc -p ./src"
   },
   "nodemonConfig": {
     "ignore": [
